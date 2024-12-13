@@ -1,10 +1,15 @@
-SELECT DISTINCT
-  title,
-  count(*)
+SELECT
+  department_code,
+  COUNT(*)
+FROM
+  students
+  NATURAL JOIN departments
+WHERE
+  dob BETWEEN '2003-01-01' AND '2003-12-31'
+GROUP BY
+  department_code;
+
+SELECT
+  *
 FROM
   book_catalogue
-  JOIN book_copies USING (ISBN_no)
-WHERE
-  title LIKE '%Advanced%'
-GROUP BY
-  title
