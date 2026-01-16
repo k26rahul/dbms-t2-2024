@@ -25,7 +25,8 @@
       "driver": "PostgreSQL",
       "name": "university",
       "database": "university",
-      "username": "postgres"
+      "username": "postgres",
+      "password": "HABSIDFAG"
     }
   ]
 }
